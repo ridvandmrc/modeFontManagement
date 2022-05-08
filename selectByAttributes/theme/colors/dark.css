@@ -1,0 +1,9 @@
+[dark] {
+  --bg-color: #000;
+  --color: #fff;
+  --border-color: #123fff;  
+  /* Button Sections */
+  --button-bg: lightyellow;
+  --button-color: lightblue;
+}
+}

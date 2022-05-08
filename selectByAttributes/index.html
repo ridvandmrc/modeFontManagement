@@ -1,0 +1,91 @@
+<head>
+  <link rel="stylesheet" href=".theme/colors/light.css" />
+  <link rel="stylesheet" href="./theme/colors/dark.css" />
+  <script>
+    function setColor() {
+      document.body.toggleAttribute("dark");
+    }
+  </script>
+  <style>
+    body {
+      background-color: var(--bg-color, white);
+      color: var(--color, black);
+    }
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 2px solid var(--border-color, lightgray);
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: var(--button-bg, lightblue);
+      color: var(--button-color, #000);
+      font-weight: bold;
+      border: none;
+    }
+
+    .content {
+      margin: 20px 0;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <button onclick="setColor()">Toggle Colors (Dark/Light)</button>
+      <button>Toggle Font (Custom1/Custom2)</button>
+    </div>
+    <div class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper
+      pharetra turpis, tempus ornare velit facilisis vel. Suspendisse potenti.
+      Maecenas metus sem, eleifend consectetur pellentesque et, mattis a mauris.
+      Ut vitae neque eu nisi pellentesque volutpat. Etiam at risus libero.
+      Integer vel nibh vel mi porta dignissim. Nulla magna lorem, imperdiet sit
+      amet ultrices sit amet, cursus accumsan massa. Proin ornare eros in
+      consectetur dapibus. Nullam ac dictum lectus, sit amet malesuada urna.
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+      ac turpis egestas. Proin cursus dui at libero luctus euismod. In hac
+      habitasse platea dictumst. Curabitur mollis augue sed faucibus mollis.
+      Cras tristique vel tellus viverra elementum. Pellentesque ultrices tortor
+      enim, dapibus finibus nibh tincidunt vel. Mauris turpis ex, tempor quis
+      vulputate at, lobortis sed erat. Aliquam semper volutpat orci, at
+      elementum sapien. Curabitur quis arcu at lorem pellentesque facilisis ac
+      ultrices urna. Etiam et hendrerit sapien, vel eleifend erat. Aenean
+      gravida ex vel convallis fringilla. Etiam id vestibulum sem, efficitur
+      placerat ligula. Proin id odio suscipit, suscipit risus in, porttitor
+      odio.
+    </div>
+    <div class="footer">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper
+      pharetra turpis, tempus ornare velit facilisis vel. Suspendisse potenti.
+      Maecenas metus sem, eleifend consectetur pellentesque et, mattis a mauris.
+      Ut vitae neque eu nisi pellentesque volutpat. Etiam at risus libero.
+      Integer vel nibh vel mi porta dignissim. Nulla magna lorem, imperdiet sit
+      amet ultrices sit amet, cursus accumsan massa. Proin ornare eros in
+      consectetur dapibus. Nullam ac dictum lectus, sit amet malesuada urna.
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+      ac turpis egestas. Proin cursus dui at libero luctus euismod. In hac
+      habitasse platea dictumst. Curabitur mollis augue sed faucibus mollis.
+      Cras tristique vel tellus viverra elementum. Pellentesque ultrices tortor
+      enim, dapibus finibus nibh tincidunt vel. Mauris turpis ex, tempor quis
+      vulputate at, lobortis sed erat. Aliquam semper volutpat orci, at
+      elementum sapien. Curabitur quis arcu at lorem pellentesque facilisis ac
+      ultrices urna. Etiam et hendrerit sapien, vel eleifend erat. Aenean
+      gravida ex vel convallis fringilla. Etiam id vestibulum sem, efficitur
+      placerat ligula. Proin id odio suscipit, suscipit risus in, porttitor
+      odio.
+    </div>
+  </div>
+</body>
