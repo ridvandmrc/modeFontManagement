@@ -1,15 +1,24 @@
 <head>
   <link rel="stylesheet" href=".theme/colors/light.css" />
   <link rel="stylesheet" href="./theme/colors/dark.css" />
+  <link rel="stylesheet" href="./theme/font/font-1/variable.css" />
+  <link rel="stylesheet" href="./theme/font/font-2/variable.css" />
   <script>
     function setColor() {
       document.body.toggleAttribute("dark");
+    }
+
+    function setFont() {
+      document.body.toggleAttribute("font-2");
     }
   </script>
   <style>
     body {
       background-color: var(--bg-color, white);
       color: var(--color, black);
+      font-family: var(--body-font, "Courier New");
+      font-size: var(--body-font-size);
+      line-height: var(--line-height);
     }
     .container {
       width: 100%;
@@ -45,7 +54,7 @@
   <div class="container">
     <div class="header">
       <button onclick="setColor()">Toggle Colors (Dark/Light)</button>
-      <button>Toggle Font (Custom1/Custom2)</button>
+      <button onclick="setFont()">Toggle Font (Custom1/Custom2)</button>
     </div>
     <div class="content">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper
